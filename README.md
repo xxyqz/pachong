@@ -1,2 +1,2 @@
 # pachong
-pachong repsitory
+A pachong repository
