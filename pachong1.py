@@ -3,6 +3,7 @@ import requests
 from requests.exceptions import RequestException
 import re
 import time
+import random
 
 
 def get_one_page(url):
@@ -19,7 +20,7 @@ def get_one_page(url):
 
 
 def write_to_file(content):
-    with open('result.txt','a+', encoding='utf-8') as f:
+    with open('result.txt', 'a+', encoding='utf-8') as f:
         f.write(json.dumps(content, ensure_ascii=False) + '\n')
 
 
@@ -50,4 +51,4 @@ def main(offset):
 if __name__ == '__main__':
     for i in range(10):
         main(offset=i * 10)
-        time.sleep(1)
+        time.sleep(1+random.random())
