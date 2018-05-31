@@ -31,7 +31,8 @@ while True:
 
                 if len(movie_names) == 0:
                     break
-
+                print(len(movie_names))
+                print(len(stars))
                 for i in range(len(movie_names)):
                     row = "{},{},{}".format(str(year), movie_names[i], stars[i])
                     print(row)
